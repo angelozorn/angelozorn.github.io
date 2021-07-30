@@ -3,9 +3,12 @@
   --white: #ffffff;
   --black: #000000;
 }
-
+* {
+  color: var(--fontColor);
+  font-family: helvetica;
+}
 body {
-    font-family: monospace;
+    background: var(--bg);
 }
 
 ul {
