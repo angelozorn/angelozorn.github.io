@@ -3,13 +3,9 @@ body{
 
 }
 
-li{
-  display: inline;
-  color:orange;
-
-}
 
 .h1{
+  display:inline;
   color:orange;
 
 }
