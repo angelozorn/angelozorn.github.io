@@ -1,5 +1,11 @@
 body{ 
-  background:black
+  background:black;
+
+}
+
+li{
+  display: inline;
+  color:orange;
 
 }
 
