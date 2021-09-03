@@ -5,8 +5,9 @@ body{
 li{
   display:inline;
   color:orange;
-  text-align:justify;
+  text-align:right;
   font-size:2em;
+  text-decoration:underline;
   
 }
 a{
