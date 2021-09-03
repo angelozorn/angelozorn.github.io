@@ -5,6 +5,7 @@ body{
 li{
   display:inline;
   color:orange;
+  text-align:justify;
   font-size:2em;
   
 }
