@@ -7,11 +7,11 @@ li{
   color:orange;
   text-align:right;
   font-size:2em;
-  text-decoration:underline;
-  
+    
 }
 a{
   color:orange;
+  text-decoration: none;
   
 }
 
