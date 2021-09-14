@@ -1,4 +1,5 @@
 @import url("https://fonts.googleleapis.com/css?family=Mali");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap');
 body{ 
   font-family: 'Mali', cursive;
   background-color:#FC6B00;
@@ -28,6 +29,7 @@ header{
 }
 
 .h1{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
   color:orange;
 
 }
