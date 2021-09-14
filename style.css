@@ -11,8 +11,9 @@ body{
 
 header{
   background-color:black
+  color white
 }
-nav li {
+.navbar {
   width: 70px;
   padding: 5px 20px;
   margin: 5px;
