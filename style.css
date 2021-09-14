@@ -8,11 +8,13 @@ body{
 .logo{
   color:white;
   text-align:left;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 header{
   background-color:black
   color white
+    
 }
 .navbar {
   width:70px;
