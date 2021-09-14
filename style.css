@@ -5,6 +5,7 @@ body{
   background-color:#FC6B00;
 
 }
+
 .logo{
   color:white;
   text-align:left;
@@ -16,7 +17,7 @@ header{
   color white
     
 }
-nav {
+.nav {
   list-style:none;
   display:inline;
   background-color:black;
