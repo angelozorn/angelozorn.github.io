@@ -17,18 +17,21 @@ header{
   color white
     
 }
-.nav li a{
+.nav li{
   list-style:none;
   display:inline;
+  text-align:right;
+}
+.nav li a{
+  
   background-color:black;
   color:white;
   font-size:2em;
   text-decoration:none;
-  text-align:right;
   width:70px;
   padding:5px 20px;
   margin:5px;
-  text-align:right;
+  
   
   
      
