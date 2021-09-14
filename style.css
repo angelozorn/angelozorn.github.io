@@ -17,6 +17,7 @@ header{
     
 }
 nav {
+  list-style:none;
   display:inline;
   background-color:black;
   color:white;
