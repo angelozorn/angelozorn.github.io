@@ -3,9 +3,14 @@ body{
 
 }
  nav li {
- width: 70px;
-   padding: 5px 20px:
-     margin: 5px:
+  width: 70px;
+  padding: 5px 20px;
+  margin: 5px;
+  display:inline;
+  color:#FC6B00;
+  text-align:right;
+  font-size:2em;
+  text-decoration: none;
      
   
 }
