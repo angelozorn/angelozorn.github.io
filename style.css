@@ -17,10 +17,15 @@ header{
   color white
     
 }
+
+
+.nav{
+  text-align:right
+}
 .nav li{
   list-style:none;
   display:inline;
-  text-align:right;
+  
 }
 .nav li a{
   
