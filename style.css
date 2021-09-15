@@ -41,6 +41,7 @@ header{
 
 .nav li a:hover{
   background-color: #806B60;
+  border-bottom:3px solid white;
 }
 
 .nav li a:active {
