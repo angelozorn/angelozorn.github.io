@@ -31,12 +31,18 @@ header{
   width:70px;
   padding:5px 20px;
   margin:5px;
-  
-  
-  
-     
-  
 }
+
+.nav li a:hover{
+  background-color: #111;
+}
+
+.nav li a:visited{
+  background-color: purple;
+}
+.nav li a:active {
+ background-color: #4CAF50;
+ }
 
 .h1{
   font-family: 'IBM Plex Sans Arabic', sans-serif;
