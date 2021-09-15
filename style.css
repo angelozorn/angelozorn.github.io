@@ -37,9 +37,6 @@ header{
   background-color: #111;
 }
 
-.nav li a:visited{
-  background-color: purple;
-}
 .nav li a:active {
  background-color: #4CAF50;
  }
