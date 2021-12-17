@@ -53,6 +53,9 @@ header{
   color:orange;
 
 }
+.h3{
+  color:white;
+}
 
 section{
  min-height: 400px;
@@ -60,6 +63,11 @@ section{
   background-color: black;
   margin: 10px 0;
   border 5px dotted #FC6B00;
+}
+
+.headshot{
+  text-align: right;
+   width="70";
 }
 
 
