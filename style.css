@@ -19,7 +19,7 @@ header{
 }
 
 .headshotbioposition{
-  position: relative;
+  float: right;
   right: 80px;
   width: 15px;
   height: 20px;
