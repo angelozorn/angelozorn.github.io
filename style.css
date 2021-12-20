@@ -19,16 +19,6 @@ header{
     
 }
 
-.headshotbioposition{
-  text-align:right;
-}
-
-.headshotbioposition li{
-   list-style:none;
-  display:inline;
-  text-align:center;
-}
-
 .nav{
   text-align:right;
   
@@ -57,6 +47,39 @@ header{
 .nav li a:active {
  background-color: #4CAF50;
  }
+
+.headshotbioposition{
+  text-align:right;
+}
+
+.headshotbioposition li{
+   list-style:none;
+  display:inline;
+  text-align:center;
+}
+
+#locationimage, #githubimage, #linkedinimage {
+background-color:black;
+opacity:0.6;  
+}
+
+#locationimage a{
+color:white;
+}
+
+#locationimage a:hover{
+cursor: default;
+}
+
+#githubimage a, #linkedinimage a {
+text-decoration:none;
+color:white;
+}
+
+#githubimage, #linkedinimage {
+background-color: green;
+opacity:1;
+}
 
 .h1{
   font-family: 'IBM Plex Sans Arabic', sans-serif;
