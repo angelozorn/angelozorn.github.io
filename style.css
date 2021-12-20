@@ -76,7 +76,7 @@ text-decoration:none;
 color:white;
 }
 
-#githubimage, #linkedinimage {
+#githubimage, #linkedinimage a:hover{
 background-color: green;
 opacity:1;
 }
