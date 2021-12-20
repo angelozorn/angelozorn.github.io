@@ -48,6 +48,10 @@ header{
  background-color: #4CAF50;
  }
 
+#adjectiveposition{
+float:left
+}
+
 #resumebtn{
  background-color: orange;
     text-color: white
@@ -59,7 +63,7 @@ header{
     margin-top: 1rem;
 }
 #headshotbioposition{
-  text-align:right;
+  float:right;
   
 }
 
@@ -80,7 +84,7 @@ text-color:white;
 }
 
 #locationimage a:hover{
-cursor: default;
+cursor:default;
 }
 
 #githubimage a, #linkedinimage a {
