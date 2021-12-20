@@ -20,9 +20,6 @@ header{
 
 .headshotbioposition{
   float: right;
-  width: 15px;
-  height: 20px;
-  border: 3px solid;
 }
 
 .headshotbioposition li{
