@@ -50,12 +50,14 @@ header{
 
 .headshotbioposition{
   text-align:right;
+  
 }
 
 .headshotbioposition li{
    list-style:none;
   display:inline;
   text-align:center;
+  text-color:white;
 }
 
 #locationimage, #githubimage, #linkedinimage {
@@ -76,7 +78,7 @@ text-decoration:none;
 color:white;
 }
 
-#githubimage, #linkedinimage a:hover{
+#githubimage a:hover, #linkedinimage a:hover{
 background-color: green;
 opacity:1;
 }
