@@ -18,6 +18,18 @@ header{
     
 }
 
+.headshotbioposition{
+  position: absolute;
+  right: 50px;
+  width: 100px;
+  height: 120px;
+  border: 3px solid;
+}
+
+.headshotbioposition li{
+   list-style:none;
+  display:inline;
+}
 
 .nav{
   text-align:right;
