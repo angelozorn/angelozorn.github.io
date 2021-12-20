@@ -58,12 +58,12 @@ header{
     border-radius: 10px;
     margin-top: 1rem;
 }
-.headshotbioposition{
+#headshotbioposition{
   text-align:right;
   
 }
 
-.headshotbioposition li{
+#headshotbioposition li{
    list-style:none;
   display:inline;
   text-align:center;
