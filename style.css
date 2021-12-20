@@ -49,8 +49,8 @@ header{
  }
 
 #resumebtn{
- background-color: none;
-    color: orange
+ background-color: orange;
+    text-color: white
     font-size: 1.5rem;
     text-decoration: none;
     padding: 0.5em 1em;
@@ -76,7 +76,7 @@ opacity:0.6;
 }
 
 #locationimage a{
-color:white;
+text-color:white;
 }
 
 #locationimage a:hover{
