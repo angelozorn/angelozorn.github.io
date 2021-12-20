@@ -19,7 +19,7 @@ header{
 }
 
 .headshotbioposition{
-  float: right;
+  text-align:right;
 }
 
 .headshotbioposition li{
