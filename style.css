@@ -59,7 +59,9 @@ float:left;
     margin-top: 1rem;
 }
 #headshotbioposition{
-  float:right;
+  position:relative;
+  top:10px;
+  right:15px:
   
 }
 
