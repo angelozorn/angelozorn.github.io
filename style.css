@@ -7,6 +7,14 @@ body{
 
 }
 
+#bigsection{
+ min-height: 400px;
+  padding: 20px;
+  background-color: black;
+  margin: 10px 0;
+  border 5px dotted #FC6B00;
+}
+
 .logo{
   color:white;
   text-align:left;
@@ -93,22 +101,29 @@ background-color: green;
 opacity:1;
 }
 
-.h1{
+.bigorangeletters{
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   color:orange;
 
 }
-.h3{
+
+.bigorangeletters h1:after,.bigorangeletters h1:before{
+  content: " ";
+  display:block;
+  border-bottom:2px solid black;
+  
+}
+.bigwhiteletters{
   color:white;
 }
 
-section{
- min-height: 400px;
-  padding: 20px;
-  background-color: black;
-  margin: 10px 0;
-  border 5px dotted #FC6B00;
+.headingaligncenter{
+  text-align:center;
 }
+
+
+
+
 
 
 
