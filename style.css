@@ -51,10 +51,66 @@ nav li a:active {
  background-color: #4CAF50;
  }
 
-#adjectiveposition{
-float:left;
+#heightAdjust{
+        margin-bottom: -150px;
+    }
+
+#home-left{
+    padding: 8%;
+    text-align: left;
+    z-index: 3;
+}
+
+#bannername{
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    color:orange;
+    
+}
+.adjective{
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+
+#home-right{
+    padding: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.imgInfo{
+    vertical-align: top;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-top: 0;
+    padding-top: 0;
+    
 
 }
+
+.proInfo{
+    padding: 0.1rem 0.17rem;
+}
+
+.proInfoList{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    
+}
+
+.proInfo a.btn{
+    font-size: 1.5rem;
+}
+
+
 
 #resumebtn{
  background-color: orange;
@@ -66,17 +122,7 @@ float:left;
     border-radius: 10px;
     margin-top: 1rem;
 }
-#headshotbioposition{
- float:right;
-  
-}
 
-#headshotbioposition li{
-   list-style:none;
-  display:inline;
-  text-align:center;
-  text-color:white;
-}
 
 #locationimage, #githubimage, #linkedinimage {
 background-color:black;
@@ -101,21 +147,8 @@ background-color: green;
 opacity:1;
 }
 
-.bigorangeletters{
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
-  color:orange;
 
-}
 
-.bigorangeletters h1:after,.bigorangeletters h1:before{
-  content: " ";
-  display:block;
-  border-bottom:2px solid black;
-  
-}
-.bigwhiteletters{
-  color:white;
-}
 
 .headingaligncenter{
   text-align:center;
