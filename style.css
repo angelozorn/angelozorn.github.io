@@ -15,23 +15,23 @@ body{
   border 5px dotted #FC6B00;
 }
 
-.logo{
-  text-color:white;
-  text-align:left;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+#logo{
+  padding: 0.3rem;
+    height: 50px;
+    width: 50px;
 }
 
 
-.nav{
+/*.nav{
   text-align:right;
   
-}
-.nav li{
+}*/
+/*.nav li{
   list-style:none;
   display:inline;
   
-}
-.nav li a{
+}*/
+/*.nav li a{
   
   background-color:black;
   color:white;
@@ -40,14 +40,14 @@ body{
   width:70px;
   padding:5px 20px;
   margin:5px;
-}
+}*/
 
-.nav li a:hover{
+nav li a:hover{
   background-color: #806B60;
   border-bottom:3px solid white;
 }
 
-.nav li a:active {
+nav li a:active {
  background-color: #4CAF50;
  }
 
