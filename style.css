@@ -21,6 +21,11 @@ body{
     width: 50px;
 }
 
+#navbar{
+  list-style:none;
+  display:inline;
+  color:white;
+}
 
 /*.nav{
   text-align:right;
