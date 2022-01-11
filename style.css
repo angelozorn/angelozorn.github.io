@@ -60,7 +60,7 @@ html{
 }
 
 body{
-    font-family: 'Monaco', monospace;
+    font-family: 'Merriweather', serif;
 }
 
 :root{
@@ -75,6 +75,7 @@ body{
     background-color: #333333;;
     padding: 0;
     overflow: hidden;
+    font-family: 'Monaco', monospace;
 }
 
 #logo{
@@ -376,6 +377,7 @@ body{
 #banner{
     background-color: black;
     overflow: hidden;
+    font-family: 'Monaco', monospace;
 }
 
 .left-side-item{
