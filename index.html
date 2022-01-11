@@ -1,149 +1,636 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head> <!-- containing metadata about the webpage and connecting css styling -->
+
+<head>
     <meta charset="UTF-8">
-    <meta name =viewport" content="width=device-width, initial scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angelo Zorn's Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo Zorn Personal Site</title>
+    <link rel="stylesheet icon" href="/images/trojanazlogo.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-<body> <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark animated dropDown animatedDelay5 sticky-top">
-      <div class="container-fluid"> 
-                                  <img src="giantslogo.png" id="logo">
-                                                                     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navBar">
+        <div class="container-fluid">
+            <img src="/images/trojanazlogo.png" alt="" id="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" id="collapseButton"></span>
-      </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
-  
-      <div class="container-fluid" id="topBarItems">
-        
-        <ul class="navbar-nav">
-          
-          <li class="nav-item"> <a href="#banner" class="nav-link" id="navDormant"> Home </a></li>
-          <li class="nav-item"> <a href="#aboutmescroll" class="nav-link" id="navDormant"> About Me </a></li>
-          <li class="nav-item"> <a href="#portfolioscroll" class="nav-link" id="navDormant"> Portfolio </a></li>
-          <li class="nav-item"> <a href="#contactscroll" class="nav-link" id="navDormant"> Contact </a></li>
-          
-        </ul>    
-      </div>
-      </div>
-      </div>                                                                                 
-      </nav>
-    
-  <!-- Home content  -->
-                                                                                         <!-- name, adjectives,   -->
-  <section class="container-fluid" id="banner">
-    <div class="container" id="heightAdjust">
-    <div class="row" id="frontPageBanner">
-      <div class="col-lg-7" id="home-left">
-  
-   
-    <h1 id="bannername">Angelo Zorn </h1>
-    <h3 class="adjective">Programmer</h3>
-    <h3 class="adjective">Data Scientist</h3>
-    <h3 class="adjective">Mathematician</h3>
-                  <a href="ZornResumeAugust21.pdf" class="btn btn-lg" id="resumebtn" onclick="this.blur()" download="Angelo Zorn Resume">
-                          <span class="fa fa-file">
-                          </span>
-                      Download Resume
-                  </a>
-  </div>
-  
-       <div class="col-lg-5" id="home-right">
-       <img src="websiteheadshot.jpeg"> 
-       <div class="container-fluid imgInfo" id="headshotSocialLinks">
- 
-                  <ul class="proInfoList">
-                                      <li class="proInfo" id="locationimage">
-                                        <a class="btn">
-                                          <i class="fa fa-map-marker">
-                                          </i>
-                                        San Francisco, CA
-                                        </a>
-                                      </li>
-                                      <li class="proInfo" id="githubimage">
-                                        <a href="https://github.com/angelozorn" class="btn" target="_blank" rel="noopener noreferrer" onclick="this.blur();">
-                                          <i class="fa fa-github">
-                                          </i>
-                                        Github
-                                        </a>
-                                      </li>
-                                      <li class="proInfo" id="linkedinimage">
-                                        <a href="https://www.linkedin.com/in/angelo-zorn-8b0922168/" class="btn" target="_blank" rel="noopener noreferrer" onclick="this.blur();">
-                                          <i class="fa fa-linkedin">
-                                          </i>
-                                        LinkedIn
-                                        </a>
-                                      </li>
-                  </ul>
-          </div>
-         </div>
-             </div>
-       </div>
-  </section>                                                                                                                 
-                 
-  <section class="container-fluid" id="bigsection">
-     <div class="container">
-          <div class="row align-items-center headingaligncenter">
-               <h1>
-                ::before
-                 "Background"
-                   ::after
-               </h1>
+                <div class="container-fluid" id="topBarItems">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#banner" class="nav-link" id="navDormant">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutMe" class="nav-link" id="navDormant">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolioPage" class="nav-link" id="navDormant">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contactMe" class="nav-link" id="navDormant">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-      </div>
-                                                                   
-  </section>                                                              
-  <section class="container-fluid" id="bigsection">  
-  <div id="aboutmescroll" class="h1"> I like sports </div>
-  </section>  
- 
-  <section class="container-fluid" id="bigsection">
-  <div id="portfolioscroll" class="h1"> my portfolio includes... </div>
+        </div>
+    </nav>
+
+    <!-- Home content  -->
+
+    <!-- name and short intro on left, picture on right -->
+
+     <section class="container-fluid" id="banner">
+        <div class="container" ">
+            <div class="row" >
+                
+                <div class="col-lg-7" id="home-left">
+                    <h1 id="bannerName" class="">Angelo Zorn</h1>
+
+
+                    <h3 class="adjective" id="adj1">Data Scientist</h3>
+                    <h3 class="adjective" id="adj2">Mathematician</h3>
+                    <h3 class="adjective" id="adj3">Problem Solver</h3>
+
+
+                    <a href="/files/ZornResumeAugust21.pdf" class="btn btn-lg " id="resumeButton" onclick="this.blur();"
+                        download="Angelo Zorn Resume"><span class="fa fa-file"></span> Download Resume</a>
+
+                </div>
+                <div class="col-lg-5" id="home-right">
+                    <img src="/images/Websiteheadshot.jpg" id="headshot" alt="" class="">
+                    <div class="container-fluid imgInfo " id="headshotSocialLinks">
+                        <ul class="proInfoList">
+                            <li class="proInfo" id="imgLocation"> <a href="" class="btn"><i
+                                        class="fa fa-map-marker"></i>
+                                    San Francisco, CA</a></li>
+                            <li class="proInfo" id="imgGit"> <a href="https://github.com/angelozorn" class="btn" target="_blank" rel="noopener noreferrer" onclick="this.blur();"><i
+                                        class="fa fa-github" ></i> GitHub</a></li>
+                            <li class="proInfo" id="imgLinkd"> <a href="https://www.linkedin.com/in/angelo-zorn-8b0922168/"
+                                    class="btn" target="_blank" rel="noopener noreferrer" onclick="this.blur();"> <i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
-    
-  <section class="container-fluid" id="bigsection">
-  <div class="bigwhiteletters" id="contactscroll">
-    <form>
-      <div>
-        <label for="name"> Name: </label>
-        <input type="text" id="name" name="patronName" required placeholder="John Doe">
-      </div>
-      <div>
-        <label for="email"> Email: </label>
-        <input type="email" id="email" name="email" required placeholder="example@email.com">
-      </div>
-      <div>
-        <label for="subject"> Subject: </label>
-        <input type="text" id="subject" name="subject" required placeholder="Contact">
-        
-      </div>
-      <div>
-        <label for="message"> Message: </label>
-        <textarea id="message" name="message" rows="4" cols="40" maxlength="200" required placeholder="Type Here"></textarea>
-      </div>
-      <div>
-        <input type="submit">
-      </div>
-    </form>
-  </div>
-  </section>
-                            <!-- bottom nav with info of who made website -->
+
+
+    <!-- highlight background -->
+    <div class="container-fluid" id="mainBody">
+        <div class="container" id="backgroundInfo">
+            <div class="container">
+                <div class="row align-items-center subHeadingLine">
+                    <h1>Background</h1>
+                </div>
+            </div>
+
+            <section class="container">
+                <div class="row display-flex align-items-center" id="highlights">
+                    <div class="highlightInfo col-xl-3 align-self-start">
+                        <h3 id="extranowrap"><span><i class="fa fa-calculator"></i></span>Business Analytics</h3>
+                        <hr>
+                        <p class="highlightText">I am pursuing a Masters of Busniness Analytics (MSBA) degree in the Barowsky School of Business at Dominican University.
+                            The program highlights how technology and data can be leveraged to improve business. My coursework
+                            focuses on technical skills and data engineering including data visualization, data querying, advanced statistics, and pure coding.
+                           </p>
+                    </div>
+                    <div class="highlightInfo col-xl-3 align-self-start">
+                        <h3><span><i class="fa fa-database"></i></span>Technical Skills</h3>
+                        <hr>
+                        <p class="highlightText">My goals are to join a team oriented company where I can deploy my strong technical skills. My dream is to work with other like-minded people, to play with data towards optimizing business outcomes.  
+                        </p>
+                    </div>
+                    <div class="highlightInfo col-xl-3 align-self-start">
+                        <h3><span><i class="fa fa-heart"></i></span>Sports & Data</h3>
+                        <hr>
+                        <p class="highlightText">In addition to being passionate about Math and Tech, I am an athlete and sports fanatic. I played DIII baseball at Occidental College where I had a .312 batting average over my career. With the data and analytics revolutions taking over professional sports it is a dream of mine to crunch stats and build models for a professional sports organization.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="row" id="bottombtnrow">
+                <a href="#aboutMe" class="btn btn-lg" id="nextPageBtn">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="projectHighlights">
+            <div class="container">
+                <div class="row align-items-center subHeadingLine">
+                    <h1>Project Highlights</h1>
+                </div>
+            </div>
+
+            <section class="container">
+                <div class="row display-flex align-items-center" id="highlights">
+                    <div class="highlightInfo col-xl-5 align-self-start">
+                        <h3>"Deep Learning Binary Classification Financial Forcasting Model"</h3>
+                        <hr>
+                        <p class="highlightText">This is a deep learning binary classification model using Python and Pytorch's Deep Learning Library. 
+                            We used a deep neural network with 4 hidden layers to discover non-linear trends within the data.
+                            The model only uses financial data as features, inputting Open, High, Low, Close, Volume data on a stock ticker (this code has $SPY) and predicting the next day's price movement up or down
+                            to produce output statistics like accuracy, recall, precision on the machine's predictions.
+                        </p>
+                        <span class="highlightProjectLinks" id="firstHighlight">
+                            <a class="highlightLinkGIT" href="https://github.com/angelozorn/Machine-Learning-Financial-Forcasting" target="_blank" rel="noopener noreferrer"> <i
+                                    class="fa fa-github"></i> Github</a>
+                        </span>
+                        
+                    </div>
+                    <div class="highlightInfo col-xl-5 align-self-start">
+                        <h3>"Modeling Asymptomatic Regional Spread of Covid19"</h3>
+                        <hr>
+                        <p class="highlightText">
+                            This project is modeling the regional spread of Covid-19 caused by asymptomatic individuals using differeng contact rates. 
+                            Utilizing Ordinary Differential Equations and their ability to model sub-population dynamics, we built an SAIRD (Susceptible, Asymptomatic-Infected, Symptomatic-Infected) model that encorporated a previously published regional mobility component.
+                            The project poster has thorough concise description and academic information.
+                        </p>
+                        <span class="highlightProjectLinks"><a class="highlightLinkPDF"
+                                href="/files/ProjectPoster.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file"></i>
+                                POSTER</a> <a class="highlightLinkGIT" href="https://github.com/angelozorn/Covid19-Modeling-Asymptomatic-Regional-Spread" target="_blank" rel="noopener noreferrer"> <i
+                                    class="fa fa-github"></i> Github</a> </span>
+                                    
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="row" id="bottombtnrow">
+                <a href="#portfolioPage" class="btn btn-lg" id="nextPageBtn">See My Portfolio <i
+                        class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+
+
+        <div class="container" id="aboutMe">
+            <div class="row">
+                <div class="container aboutBanner">
+                    <h1>About Me</h1>
+                    <h4>A snapshot of who I am and what I do,</h4>
+                    <h4>Connect with me!</h4>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row aboutSnapshot">
+                    <div class="col-xl-7">
+                        <img src="/images/gradphoto.jpg" alt="" id="aboutHeadshot">
+                    </div>
+                    <div class="aboutInfo col-xl-4">
+                        <div class="card infoCard">
+                            <div class="card-header aboutCardHeader">
+                                <h5 class="headerName">Angelo Zorn</h5>
+                                <p class="headerSub">Graduate Student</p>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button id="noHighlight" class="accordion-button cardSubSection" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne"
+                                            onclick="this.blur();">
+                                            <i class="fa fa-user cardIcons"></i> Bio
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row ">
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">Age:</span>
+                                                    <span class="displayBlockBig">23</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                                                    
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">Current Location:</span>
+                                                    <img src="/images/sfggb.jpeg" alt="" class="circleImage">
+                                                    <span class="bioSubText displayBlock ">San Francisco, CA</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">
+                                                        Goals:
+                                                    </span>
+                                                    <ul class="bioSubText">
+                                                        <li>Get better at the Unix command line</li>
+                                                        <li>Learn Cybersecurity and Ethical Hacking</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button id="noHighlight" class="accordion-button collapsed cardSubSection"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo"
+                                            onclick="this.blur();">
+                                            <i class="fa fa-graduation-cap cardIcons"></i> Education
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <p class="educationHeader"><img src="/images/oxyLogo.png" alt=""
+                                                        class="circleImageSmall"> Occidental College</p>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="educationSubHeader">(2017 - 2021)</p>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="educationDetails">
+                                                    <li><i>Degree:</i> BA Mathematics, Minor Economics</li>
+                                                    <li><i>Focus of Study:</i> Applied and Computational Mathematics, Computer Science
+                                                     </li>
+                                                    <li><i>Awards:</i> Deans List (2017,2020)</li>
+                                                    <li><i>Involvement:</i>Varsity Baseball: Player (2016-2020)  </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <p class="educationHeader"><img src="/images/dulogo.png" alt=""
+                                                        class="circleImageSmall"> Dominican University of California</p>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="educationSubHeader">(2021 - Present)</p>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="educationDetails">
+                                                    <li><i>Degree:</i> Masters in Business Analytics MSBA</li>
+                                                    <li><i>Focus of Study:</i> Database Management, Data Visualization
+                                                     </li>
+                                                     <li><i>Expected Graduation</i> August, 2022
+                                                     </li>
+                                                  
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button id="noHighlight" class="accordion-button collapsed cardSubSection"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree" onclick="this.blur();">
+                                            <i class="fa fa-briefcase cardIcons"></i> Work Experience
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="cardDetails">
+                                                <li>
+                                                    Network Integrity Analyst Intern
+                                                </li>
+                                                <li id="extanowrap">
+                                                    Covid-19 Spread Modeling Intern
+                                                </li>
+                                                <li>
+                                                    Waiter
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button id="noHighlight" class="accordion-button collapsed cardSubSection"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour"
+                                            onclick="this.blur();">
+                                            <i class="fa fa-bullseye cardIcons"></i> Hobbies
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="cardDetails">
+                                                <li>
+                                                    I love Bay Area Sports!
+                                                </li>
+                                                <li>
+                                                    <img src="/images/giantslogo.png">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer aboutFooter">
+                                <a href="/files/ZornResumeAugust21.pdf" class="btn btn-lg" id="aboutResumeButton"
+                                    onclick="this.blur();" download="Angelo Zorn Resume"><span class="fa fa-file"></span>
+                                    Full Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- portfolio section -->
+
+    <div class="container-fluid" id="portfolioPage">
+        <div class="container">
+            <div class="row align-items-center subHeadingLine">
+                <h1>Full Portfolio</h1>
+            </div>
+        </div>
+        <section class="container">
+            <div class="row">
+                <h1 class="portfolioHeaders">Academic Projects</h1>
+
+                <div id="accordion1">
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingOne1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light collapsed portfolioAccordianButton accordianBackground"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true"
+                                    aria-controls="collapseOne" onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Deep Learning Binary Classification Financial Forcasting Model</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+                            <div class="card-body">
+                                <span>Code: <a
+                                        href="https://github.com/angelozorn/Machine-Learning-Financial-Forcasting" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+                                <p>
+                                    <span class="projectSummary">Summary:</span>
+                                     A deep learning binary classification model using Python and Pytorch's Deep Learning Library. 
+                                    We used a deep neural network with 4 hidden layers to discover non-linear trends within the data. 
+                                    The model only uses financial data as features, inputting Open, High, Low, Close, Volume data on a stock ticker (this code has $SPY) and predicting the next day's price movement up or down to produce output statistics like accuracy, recall, precision on the machine's predictions.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingTwo1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light portfolioAccordianButton accordianBackground"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false"
+                                    aria-controls="collapseTwo" onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Modeling Asymptomatic Regional Spread of Covid19</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                            <div class="card-body">
+                                <span>Authored, <a href="/files/ProjectPoster.pdf" target="_blank" rel="noopener noreferrer">PDF</a> Code: <a
+                                        href="https://github.com/angelozorn/Covid19-Modeling-Asymptomatic-Regional-Spread" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+                                <p>
+                                    <span class="projectSummary">Summary:</span> 
+                                    This project is modeling the regional spread of Covid-19 caused by asymptomatic individuals using differeng contact rates. 
+                                    Utilizing Ordinary Differential Equations and their ability to model sub-population dynamics, we built an SAIRD (Susceptible, Asymptomatic-Infected, Symptomatic-Infected) model that encorporated a previously published regional mobility component. 
+                                    The project poster has thorough concise description and academic information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingThree1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light portfolioAccordianButton accordianBackground"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false"
+                                    aria-controls="collapseThree" onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right chevrons"></i>San Francisco Parking Meter Revenue Data Visualization 2019-2021</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree1" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion1">
+                            <div class="card-body">
+                                <span>Authored, <a
+                                        href="https://github.com/angelozorn/San-Fran-Parking-Meter-Data-Visualization" target="_blank" rel="noopener noreferrer">Project</a></span>
+                                <p>
+                                    <span class="projectSummary">Summary:</span> Visualizing activity levels in San Francisco throughout the Covid-19 pandemic using data from 2019-2021 which spans pre-pandemic, mandated lockdowns, all the way through October 2021 by using parking meter revenue as an indicator variable for activity level.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                <div class="row" id="bottomProjectSet">
+                    <h1 class="portfolioHeaders">Personal Projects</h1>
+                    <div id="accordion2">
+                        <div class="card">
+                            <div class="card-header accordianBackground" id="headingOne2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne"
+                                        onclick="this.blur();">
+                                        <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Web
+                                            Development</span>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne2" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordion2">
+                                <div class="card-body">
+                                    <ul>
+                                                    <li> - This Website, Code: <a
+                                                href="https://github.com/angelozorn/angelozorn.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                        </li>
+                                        <li> - More to come soon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header accordianBackground" id="headingTwo2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo"
+                                        onclick="this.blur();">
+                                        <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Data
+                                            Science</span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion2">
+                                <div class="card-body">
+                                    <ul>
+                                      
+                                        <li> - More to come soon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header accordianBackground" id="headingThree2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree2" aria-expanded="false"
+                                        aria-controls="collapseThree" onclick="this.blur();">
+                                        <span class="projectHeaderText"><i class="fa fa-angle-right"></i>
+                                            Miscellaneous</span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree2" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion2">
+                                <div class="card-body">
+                                    <ul>
+                                       
+                                        <li> - More to come soon
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+    </div>
+    <div class="container-fluid" id="contactMe">
+        <div class="container">
+            <div class="row align-items-center subHeadingLine contactPageHeader">
+                <h1>Contact</h1>
+            </div>
+        </div>
+
+        <h2 class="contactPageSubHeader">Send me a message and I will reply as soon as possible!</h2>
+
+        <div class="container" id="mainContactContent">
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <section class="container" id="contactForm">
+
+                        <form method="POST" action="https://formspree.io/f/myybanrw" id="formContent">
+                            <div class="row">
+                                <div class="col-md-6 inputSpace">
+                                    <label for="firstName">Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Last"
+                                        name="name" required>
+                                </div>
+                                <div class="col-md-6 inputSpace">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email@gmail.com"
+                                        name="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col inputSpace">
+                                    <label for="email">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Contact"
+                                        name="subject" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col inputSpace">
+                                    <label for="message">Leave a Messege</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                                        placeholder="Type Here" name="message" required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" value="Send" class="btn" id="aboutResumeButton">Send</button>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-lg-6 contactRightBox order-1 order-lg-2">
+                    <div class="container-fluid" id="contactInfoRight">
+                        <img src="trojanazlogo.png" alt="">
+                        <span><i class="fa fa-map-marker"></i> San Francisco, California</span>
+                        <span> <a href="mailto:angelozorn2017@gmail.com"><i class="fa fa-envelope"></i>
+                                angelozorn2017@gmail.com</a></span>
+                        <hr>
+                        <ul class="social-icons" id="contactPageSocialList">
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/angelo-zorn-8b0922168/" class="social-icon" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa fa-linkedin" id="contactPageLinkd"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/angelozorn" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+                                        id="contactPageGit"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- social media/linked in connect and bottom nav -->
+
+    <section class="container-fluid">
+        <div class="row align-items-center" id="bottom-nav">
+            <div class="col" id="socialcol">
+                <span>Connect With Me:</span>
+                <ul class="social-icons" id="bottomSocialList">
+                       
+                    <li>
+                        <a href="https://www.linkedin.com/in/angelo-zorn-8b0922168/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"
+                                id="bottomNavLinkd"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/angelozorn" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+                                id="bottomNavGit"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:angelozorn2017@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"
+                                id="bottomNavEmail"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- bottom nav with info of who made website -->
     <footer>
-        <span>Website designed and built by Angelo Zorn | Icons from Font Awesome | Hope you enjoy!</span>
+        <span>Website designed and built by Angelo Zorn | Icons from Font Awesome | Thanks for visiting!</span>
     </footer>
 
     <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -151,5 +638,6 @@
         crossorigin="anonymous"></script>
 
     <script src="/app.js"></script>
-  </body>
+</body>
+
 </html>
