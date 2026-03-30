@@ -2,27 +2,63 @@
     "use strict";
 
     const navBar = document.querySelector("#navBar");
-    const bannerName = document.querySelector("#bannerName");
-    const bannerImage = document.querySelector("#headshot");
-    const adj1 = document.querySelector("#adj1");
-    const adj2 = document.querySelector("#adj2");
-    const adj3 = document.querySelector("#adj3");
-    const resumeButton = document.querySelector("#resumeButton");
-    const mainBody = document.querySelector("#mainBody");
-    const socialBar = document.querySelector("#headshotSocialLinks");
+    const revealTargets = [
+        "#bannerName",
+        "#headshot",
+        "#adj1",
+        "#adj2",
+        "#adj3",
+        "#resumeButton",
+        "#headshotSocialLinks"
+    ]
+        .map((selector) => document.querySelector(selector))
+        .filter(Boolean);
 
-    function addHeroAnimations() {
-        if (!bannerName) return;
-        bannerName.classList.add("anim-in");
-        if (bannerImage) bannerImage.classList.add("anim-in", "anim-in-delay-1");
-        if (adj1) adj1.classList.add("anim-in", "anim-in-delay-2");
-        if (adj2) adj2.classList.add("anim-in", "anim-in-delay-2");
-        if (adj3) adj3.classList.add("anim-in", "anim-in-delay-2");
-        if (resumeButton) resumeButton.classList.add("anim-in", "anim-in-delay-3");
-        if (mainBody) mainBody.classList.add("anim-in", "anim-in-delay-4");
-        if (socialBar) socialBar.classList.add("anim-in", "anim-in-delay-3");
-        if (navBar) navBar.classList.add("anim-in");
+    function applyIntroAnimation() {
+        revealTargets.forEach((node, index) => {
+            node.classList.add("anim-in");
+            if (index > 0 && index < 4) {
+                node.classList.add("anim-in-delay-2");
+            } else if (index >= 4 && index <= 6) {
+                node.classList.add("anim-in-delay-3");
+            } else if (index > 6) {
+                node.classList.add("anim-in-delay-4");
+            } else {
+                node.classList.add("anim-in-delay-1");
+            }
+        });
     }
 
-    document.addEventListener("DOMContentLoaded", addHeroAnimations);
+    function syncNavOnScroll() {
+        if (!navBar) return;
+        const toggle = () => navBar.classList.toggle("is-scrolled", window.scrollY > 8);
+        toggle();
+        window.addEventListener("scroll", toggle, { passive: true });
+    }
+
+    function enableRevealOnScroll() {
+        const cards = document.querySelectorAll(
+            ".feature-card, .project-spotlight, .portfolio-accordion .accordion-item, .contact-card, .about-card"
+        );
+        if (!cards.length || !("IntersectionObserver" in window)) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add("anim-in");
+                    observer.unobserve(entry.target);
+                });
+            },
+            { threshold: 0.12 }
+        );
+
+        cards.forEach((card) => observer.observe(card));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        applyIntroAnimation();
+        syncNavOnScroll();
+        enableRevealOnScroll();
+    });
 })();
